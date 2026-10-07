@@ -1,56 +1,72 @@
-# Image Analytics Lab
+# 🖼️ Image Analytics Lab
 
-A modern Streamlit college-project demo for Image & Video Analytics.
+An interactive **Computer Vision and Image Analytics web application** built using Python and Streamlit.
 
-## Features
+The application provides a simple and user-friendly interface to explore different image processing, face detection, face analysis, and face verification techniques.
 
-1. Template Matching — OpenCV `matchTemplate`
-2. Viola–Jones Face Detection — OpenCV Haar cascade
-3. DeepFace Analysis — pretrained deep-learning face analysis
-4. FaceNet Face Verification — FaceNet embeddings + Euclidean distance
+## 🚀 Live Demo
 
-## Run locally
+👉 **[Try Image Analytics Lab](YOUR_STREAMLIT_DEMO_LINK)**
 
-```bash
-python -m venv .venv
-```
+---
 
-Windows:
-```bash
-.venv\Scripts\activate
-```
+## 📌 Features
 
-Linux/macOS:
-```bash
-source .venv/bin/activate
-```
+### 🔍 1. Template Matching
+- Detects a specific template/object inside a larger image.
+- Uses OpenCV's `matchTemplate()` method.
+- Supports multiple template matching techniques.
+- Displays the detected region with a bounding box.
+- Shows matching confidence.
 
-Install:
-```bash
-pip install -r requirements.txt
-```
+### 👤 2. Viola-Jones Face Detection
+- Detects human faces using the Viola-Jones algorithm.
+- Uses OpenCV Haar Cascade Classifiers.
+- Draws bounding boxes around detected faces.
+- Allows adjustment of detection parameters.
 
-Start:
-```bash
-streamlit run app.py
-```
+### 🧠 3. DeepFace Analysis
+- Performs AI-based facial analysis.
+- Provides:
+  - Age estimation
+  - Gender analysis
+  - Emotion detection
+  - Race/ethnicity analysis
+- Supports different face detector backends.
 
-Open the local URL shown by Streamlit.
+### 🔐 4. FaceNet Face Verification
+- Compares two face images.
+- Generates facial embeddings using FaceNet.
+- Calculates the distance between embeddings.
+- Determines whether the two faces are likely to belong to the same person.
 
-## Deployment
+---
 
-This project includes `packages.txt` and `runtime.txt` for common Streamlit Community Cloud deployments.
+## 🛠️ Technologies Used
 
-1. Push this folder to GitHub.
-2. Create a Streamlit Community Cloud app.
-3. Select `app.py` as the entry point.
-4. Deploy.
+- **Python**
+- **Streamlit**
+- **OpenCV**
+- **NumPy**
+- **Pillow**
+- **DeepFace**
+- **FaceNet**
+- **PyTorch**
+- **TorchVision**
 
-DeepFace and FaceNet are substantially heavier than the OpenCV modules. On a small cloud instance, the first model load can be slow and memory limits may matter.
+---
 
-## Notes
+## 🏗️ Application Structure
 
-- DeepFace downloads/caches model weights on first use.
-- FaceNet uses `facenet-pytorch` with the pretrained VGGFace2 InceptionResnetV1 model.
-- FaceNet verification threshold is configurable in the UI. It is an educational demo threshold, not a universal biometric decision threshold.
-- The application does not permanently store uploaded images.
+```text
+Image Analytics Lab
+│
+├── 🏠 Overview
+│
+├── 🔍 Template Matching
+│
+├── 👤 Viola-Jones Face Detection
+│
+├── 🧠 DeepFace Analysis
+│
+└── 🔐 FaceNet Face Verification
