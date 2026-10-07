@@ -6,7 +6,7 @@ The application provides a simple and user-friendly interface to explore differe
 
 ## 🚀 Live Demo
 
-👉 **[Try Image Analytics Lab](YOUR_STREAMLIT_DEMO_LINK)**
+👉 **[Try Image Analytics Lab](https://imageprocessinglab-kx2nyoscwhkdppmngx9gwn.streamlit.app/)**
 
 ---
 
