@@ -1,0 +1,9 @@
+streamlit>=1.36
+opencv-python-headless>=4.8
+numpy>=1.24
+Pillow>=10.0
+deepface>=0.0.93
+facenet-pytorch>=2.6.0
+torch>=2.1
+torchvision>=0.16
+tf-keras>=2.16
